@@ -15,4 +15,5 @@ class Segment(BasicSegment):
         if powerline.args.prev_error != 0:
             fg = powerline.theme.CMD_FAILED_FG
             bg = powerline.theme.CMD_FAILED_BG
+        powerline.append("\n", -1, -1, '')
         powerline.append(root_indicators[powerline.args.shell], fg, bg, sanitize=False)
